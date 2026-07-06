@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+body {
+  background: whitesmoke;
+  font-family: "Mozilla Text", sans-serif;
+  font-optical-sizing: auto;
+}
