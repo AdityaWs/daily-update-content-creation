@@ -1,6 +1,8 @@
 import logo from "./../../assets/Brand Title (512).png";
+import SlideArrow from "../component/SlideArrow";
+import SlideNumber from "../component/SlideNumber";
 
-export default function LunaCoverFloatingSide({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top' }) {
+export default function LunaCoverFloatingSide({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top', index = 1 }) {
 
   let image_to_display = null;
   if (image) {
@@ -25,7 +27,7 @@ export default function LunaCoverFloatingSide({ image, judul, materi, img_object
         <p className="absolute top-0 left-0 -translate-y-full text-justify text-white font-bold bg-blue-950 px-4 py-2">{materi}</p>
       </div>
       <small className="absolute top-0 right-0 h-[10%] pr-6 flex items-center text-white text-xs">Foto: Wikimedia</small>
-      <div className="absolute bottom-0 right-0 text-4xl p-6 pr-8 text-white">→</div>
+      <div className="absolute bottom-0 right-0 text-4xl p-6 pr-8 text-white"><SlideArrow index={index} /></div>
     </article>
   )
 }

@@ -1,6 +1,8 @@
+import SlideArrow from "../component/SlideArrow";
+import SlideNumber from "../component/SlideNumber";
 import logo from "./../../assets/Brand Title (512).png";
 
-export default function ClosingHead({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top' }) {
+export default function LunaClosingHead({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top', index = 1 }) {
 
   let image_to_display = null;
   if (image) {
@@ -18,6 +20,7 @@ export default function ClosingHead({ image, judul, materi, img_object_fit = 'co
     <article className="relative h-[720px] w-[540px] bg-white">
       {image_to_display}
       <div className="absolute h-full w-full top-0 left-0 p-16 pt-32 bg-blue-900/90">
+        <p className="text-3xl mb-4 text-white font-bold drop-shadow max-w-[60%]">Follow untuk lebih banyak konten sejarah!</p>
         <h1 className="text-2xl mb-4 text-white font-bold drop-shadow">{judul}</h1>
         <div className="text-justify text-white text-sm drop-shadow">{materi}</div>
       </div>

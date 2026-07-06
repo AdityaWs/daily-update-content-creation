@@ -1,4 +1,4 @@
-export default function TemplatePlainPadded({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top' }) {
+export default function TemplatePlainPadded({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top', index = 1 }) {
 
   let image_to_display = null;
   if (image) {

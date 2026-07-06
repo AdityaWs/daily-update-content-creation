@@ -149,7 +149,8 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
           judul={judul}
           materi={materi}
           img_object_fit={style_object_fit}
-          img_object_position={style_object_position}></Template>
+          img_object_position={style_object_position}
+          index={index}></Template>
       </div>
       <div className="flex flex-row pt-4 pb-2 gap-2 text-center">
         <small className="w-2/5 text-gray-500">Image Server: {target_server_bahasa}</small>

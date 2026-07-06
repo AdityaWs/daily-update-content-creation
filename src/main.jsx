@@ -5,12 +5,14 @@ import Slide from './slides/Slide'
 import AppProvider from './AppProvider'
 import SlideViewer from './slides/SlideViewer'
 import ImportContent from './ImportContent'
+import ExportCaption from './ExportCaption'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AppProvider>
       <ImportContent />
       <SlideViewer />
+      <ExportCaption />
     </AppProvider>
   </StrictMode>,
 )

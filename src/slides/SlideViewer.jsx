@@ -155,7 +155,7 @@ export default function SlideViewer() {
   return (
     <>
       {controlNavbar}
-      <main className="h-screen pt-[90px] pl-[100px] w-full overflow-auto flex flex-col items-center">
+      <main className="h-screen pt-[90px] w-full overflow-auto flex flex-col items-center">
         {coverSlide}
         <div className="w-full h-[200px]"></div>
         {slides_element}

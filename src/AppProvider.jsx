@@ -8,8 +8,8 @@ import LunaCoverFloatingSide from "./slides/template/LunaCoverFloatingSide";
 import LunaCoverHeadlineFoot from "./slides/template/LunaCoverHeadlineFoot";
 import LunaCoverFloating from "./slides/template/LunaCoverFloating";
 import LunaCoverHeadline from "./slides/template/LunaCoverHeadline";
-import ClosingHead from "./slides/template/LunaClosingHead";
-import ClosingFoot from "./slides/template/LunaClosingFoot";
+import LunaClosingHead from "./slides/template/LunaClosingHead";
+import LunaClosingFoot from "./slides/template/LunaClosingFoot";
 import LunaContentBasic from "./slides/template/LunaContentBasic";
 import LunaContentIndent from "./slides/template/LunaContentIndent";
 import LunaContentAside from "./slides/template/LunaContentAside";
@@ -32,8 +32,8 @@ export default function AppProvider({ children }) {
     cover_floating_side : LunaCoverFloatingSide,
     cover_headline      : LunaCoverHeadline,
     cover_headline_foot : LunaCoverHeadlineFoot,
-    closing_head     : ClosingHead,
-    closing_foot     : ClosingFoot,
+    closing_head     : LunaClosingHead,
+    closing_foot     : LunaClosingFoot,
     content_basic    : LunaContentBasic,
     content_indent   : LunaContentIndent,
     content_aside    : LunaContentAside,

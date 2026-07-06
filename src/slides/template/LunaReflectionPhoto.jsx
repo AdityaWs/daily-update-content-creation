@@ -1,6 +1,8 @@
 import logo from "./../../assets/Brand Title (512) background.png";
+import SlideArrow from "../component/SlideArrow";
+import SlideNumber from "../component/SlideNumber";
 
-export default function LunaReflectionPhoto({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top' }) {
+export default function LunaReflectionPhoto({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top', index = 1 }) {
 
   let image_to_display = null;
   if (image) {
@@ -25,7 +27,8 @@ export default function LunaReflectionPhoto({ image, judul, materi, img_object_f
         <p className="text-justify text-sm">{materi}</p>
       </div>
       <small className="absolute bottom-0 left-0 p-8 text-white">Foto: Wikimedia</small>
-      <p className="absolute bottom-0 right-0 pr-10 pb-7 text-4xl text-white">→</p>
+      <p className="absolute bottom-0 right-0 pr-10 pb-7 text-4xl text-white"><SlideArrow index={index} /></p>
+      <SlideNumber index={index}/>
     </article>
   )
 }
