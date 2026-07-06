@@ -102,17 +102,17 @@ export default function SlideViewer() {
     kata_kunci_gambar={content['kata-kunci-gambar']}
     judul={content['judul-hook']}
     materi={content['tanggal']}
-    template_to_use="default_cover"/>
+    template_to_use="cover_floating"/>
 
   const references = content.referensi.map((referensi, index) => {
-    return <p key={index} className="w-[75%] mb-4">{referensi}</p>
+    return <p key={index} className="w-[70%] mb-4">{referensi}</p>
   })
 
   const closingSlide = <Slide
     kata_kunci_gambar={content['kata-kunci-gambar']}
     judul={'Referensi:'}
     materi={references}
-    template_to_use="default_closing"
+    template_to_use="closing_foot"
     index={content.slides.length + 2}/>;
 
 
@@ -148,15 +148,16 @@ export default function SlideViewer() {
       kata_kunci_gambar={slide_content['kata-kunci-gambar']}
       judul={slide_content.judul}
       materi={slide_content.materi}
-      template_to_use="default"
+      template_to_use="content_basic"
       index={index + 2}/>
   })
 
   return (
     <>
       {controlNavbar}
-      <main className="h-screen pt-[90px] pt-10 w-full overflow-auto flex flex-col items-center">
+      <main className="h-screen pt-[90px] pl-[100px] w-full overflow-auto flex flex-col items-center">
         {coverSlide}
+        <div className="w-full h-[200px]"></div>
         {slides_element}
         {closingSlide}
       </main>

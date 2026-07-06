@@ -29,6 +29,7 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
 
   const [target_server_bahasa, setTargetServerBahasa] = useState(g_target_server_bahasa);
   const [image_url, setImageUrl] = useState('https://placehold.co/600x400');
+  const [override_image_url, setOverrideImageUrl] = useState('');
   const [image_loaded, setImageLoaded] = useState(false);
   const [style_object_fit, setStyleObjectFit] = useState('cover');
   const [style_object_position, setStyleObjectPosition] = useState('top');
@@ -51,6 +52,7 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
       try {
         setImageLoaded(false);
         const url = await findImageForKeyword(kata_kunci_digunakan, target_server_bahasa);
+        setOverrideImageUrl('');
         setImageUrl(url);
         setImageLoaded(true);
       } catch (error) {
@@ -63,9 +65,10 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
     }
   }, [kata_kunci_digunakan, target_server_bahasa]);
 
-  let image_to_display = null;
-  if (image_loaded) {
-    image_to_display = image_url;
+  let image_to_display = override_image_url || (image_loaded ? image_url : 'https://placehold.co/600x400');
+
+  const handleImageOverride = (event) => {
+    setOverrideImageUrl(event.target.value);
   }
 
   /**
@@ -107,6 +110,7 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
     if (event.key !== 'Enter') {
       return;
     }
+    setOverrideImageUrl('');
     setKataKunciDigunakan(input_kata_kunci);
   }
 
@@ -148,10 +152,10 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
           img_object_position={style_object_position}></Template>
       </div>
       <div className="flex flex-row pt-4 pb-2 gap-2 text-center">
-        <small className="w-2/5 text-gray-500">Image Server:</small>
+        <small className="w-2/5 text-gray-500">Image Server: {target_server_bahasa}</small>
         <small className="w-3/5 text-gray-500">Image Keyword:</small>
       </div>
-      <div className="flex flex-row pb-6 gap-2">
+      <div className="flex flex-row pb-4 gap-2">
         <button
           className="cursor-pointer w-1/5 bg-gray-200 border-1 border-gray-300 py-2 rounded-sm transition duration-200 hover:bg-gray-100 hover:border-zinc-600"
           onClick={() => handleTargetServer('id')}>Use ID</button>
@@ -166,6 +170,12 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
           onChange={(event) => setInputKataKunci(event.target.value)}
           onKeyDown={handleKeywordInput} />
       </div>
+      <input
+        className="cursor-text w-full bg-white border-1 border-gray-200 rounded-sm p-2 mb-6"
+        type="text"
+        id={`keyword-override-${index}`}
+        placeholder="Override image url"
+        onKeyDown={handleImageOverride} />
       <div className="absolute top-0 right-0 translate-x-full w-[350px] pl-4">
         <p className="text-xs mb-2">Select Template:</p>
         {Object.keys(g_templates).map((templateKey) => {
@@ -179,7 +189,7 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
                   ? 'bg-blue-500 text-white hover:bg-blue-800'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}>
-              {templateKey.replace('_', ' ')}
+              {templateKey.replace(/_/g, ' ')}
             </button>
           );
         })}
