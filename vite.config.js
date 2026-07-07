@@ -13,4 +13,5 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  base: '/daily-update-content-creation/'
 })
