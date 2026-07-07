@@ -49,7 +49,7 @@ export default function SlideViewer() {
         className="cursor-pointer bg-gray-200 border-1 border-gray-300 py-2 px-5 rounded-sm transition duration-100 hover:bg-gray-100 hover:border-zinc-600"
         onClick={() => handleTargetBahasa('en')}>Use EN</button>
       <button
-        className="cursor-pointer bg-blue-500 text-white border-1 border-blue-600 py-2 px-5 rounded-sm transition duration-100 hover:bg-blue-800 hover:border-blue-800"
+        className="cursor-pointer bg-red-500 text-white border-1 border-red-600 py-2 px-5 rounded-sm transition duration-100 hover:bg-red-800 hover:border-red-800"
         onClick={() => downloadAllSlides(slide_count)}>Download All Slide ({slide_count})</button>
     </div>;
 

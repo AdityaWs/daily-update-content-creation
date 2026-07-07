@@ -1,10 +1,10 @@
-# 🌙 Luna Content Creation
+# 🌙 DailyUpdate Content Creation
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
 ![Tech](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Theme](https://img.shields.io/badge/Bleu_de_France-0055A4?style=for-the-badge)
 
-Selamat datang di **Luna Content Creation** — sebuah tool eksklusif untuk merangkai narasi sejarah yang elegan dan mendalam. Dikembangkan khusus untuk **Luna Historie**, platform yang mengusung estetika biru klasik Prancis dalam setiap lembar kisahnya.
+Selamat datang di **DailyUpdate Content Creation** — sebuah tool eksklusif untuk merangkai narasi sejarah yang elegan dan mendalam. Dikembangkan khusus untuk **DailyUpdate Historie**, platform yang mengusung estetika biru klasik Prancis dalam setiap lembar kisahnya.
 
 ![Screenshot](./screenshot.png)
 
@@ -13,9 +13,7 @@ Selamat datang di **Luna Content Creation** — sebuah tool eksklusif untuk mera
 ## 🎨 Visi Visual
 Aplikasi ini dirancang untuk menyatukan presisi data dengan keindahan visual. Terinspirasi dari aristokrasi Prancis abad ke-18 dan keanggunan warna biru *bleu de France*, setiap slide yang Anda buat adalah sebuah artefak digital yang siap memikat audiens.
 
-![Sample Slide](./slides/slide-1.png)
-![Sample Slide](./slides/slide-2.png)
-![Sample Slide](./slides/slide-11.png)
+![Sample Slide](./slides.png)
 
 ---
 
@@ -58,20 +56,21 @@ Untuk memperluas narasi, tambahkan objek slide baru ke dalam array `slides` di J
 
 ## 🛠️ Perluasan Template (Custom Atelier)
 
-Untuk menambahkan desain template slide baru ke dalam *Atelier* Luna Historie:
+Untuk menambahkan desain template slide baru ke dalam *Atelier* DailyUpdate Historie:
 
-1.  **Crafting:** Buat komponen React baru di `src/slides/template/` (contoh: `LunaRoyalCover.jsx`).
+1.  **Crafting:** Buat komponen React baru di `src/slides/template/` (contoh: `DailyUpdateRoyalCover.jsx`).
 2.  **Define Layout:** Rancang struktur JSX Anda dengan estetika biru khas Prancis.
 3.  **Registration:** Daftarkan template di `src/slides/Slide.jsx` ke dalam objek `templates`:
     ```jsx
-    import LunaRoyalCover from "./template/LunaRoyalCover";
+    import DailyUpdateRoyalCover from "./template/DailyUpdateRoyalCover";
 
     const templates = {
-      "royal_cover": <LunaRoyalCover ... />
+      "royal_cover": <DailyUpdateRoyalCover ... />
     };
     ```
 4.  **Implementation:** Pilih dan klik `"royal_cover"` untuk menggunakan template.
 
 ---
 
-> *L'histoire est une lumière qui éclaire le passé. Luna Historie — Membawa sejarah kembali hidup.* ⚜️
+> *L'histoire est une lumière qui éclaire le passé. DailyUpdate Historie — Membawa sejarah kembali hidup.* ⚜️
+

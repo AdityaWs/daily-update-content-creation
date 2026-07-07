@@ -16,7 +16,7 @@ export default function TemplatePlainPhoto({ image, judul, materi, img_object_fi
     <article className="relative h-[720px] w-[540px] bg-white">
       {image_to_display}
       <div className="absolute h-[55%] top-[45%] left-0 p-8 bg-zinc-900/60 backdrop-blur-lg">
-        <h1 className="text-3xl mb-4 text-blue-400 font-bold drop-shadow">{judul}</h1>
+        <h1 className="text-3xl mb-4 text-red-400 font-bold drop-shadow">{judul}</h1>
         <p className="text-justify text-white text-sm drop-shadow">{materi}</p>
       </div>
       <small className="absolute bottom-0 left-0 p-8 text-white">Foto: Wikimedia</small>

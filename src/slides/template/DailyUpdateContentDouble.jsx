@@ -1,8 +1,8 @@
 import SlideArrow from "../component/SlideArrow";
 import SlideNumber from "../component/SlideNumber";
-import logo from "./../../assets/Brand Title (512) invert.png";
+import logo from "./../../assets/DailyUpdate.png";
 
-export default function LunaContentDouble({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top', index = 1 }) {
+export default function DailyUpdateContentDouble({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top', index = 1 }) {
 
   let image_to_display = null;
   if (image) {
@@ -18,10 +18,10 @@ export default function LunaContentDouble({ image, judul, materi, img_object_fit
 
   return (
     <article className="relative h-[720px] w-[540px] bg-white">
-      <img src={logo} className="absolute top-0 left-0 h-[10%] pl-3" />
+      <img src={logo} className="absolute top-0 left-0 h-[10%] ml-4 mt-4" />
       <div className="flex flex-col gap-8 p-8 justify-center h-full pt-24">
         <div>
-          <h1 className="text-3xl text-center text-blue-900 font-bold">{judul}</h1>
+          <h1 className="text-3xl text-center text-red-900 font-bold">{judul}</h1>
         </div>
         <div className="gap-8 flex flex-row">
           <p className="text-justify text-sm w-1/2">{materi}</p>
@@ -34,3 +34,4 @@ export default function LunaContentDouble({ image, judul, materi, img_object_fit
     </article>
   )
 }
+

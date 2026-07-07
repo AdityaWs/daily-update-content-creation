@@ -19,11 +19,11 @@ export default function TemplatePlainPadded({ image, judul, materi, img_object_f
     <article className="relative h-[720px] w-[540px] bg-white">
       {image_to_display}
       <div className="py-4 px-16">
-        <h1 className="text-3xl mb-4 text-blue-900 font-bold">{judul}</h1>
+        <h1 className="text-3xl mb-4 text-red-900 font-bold">{judul}</h1>
         <p className="text-justify text-sm">{materi}</p>
       </div>
       <small className="absolute bottom-0 left-0 p-8">Foto: Wikimedia</small>
-      <p className="absolute bottom-0 right-0 pr-10 pb-7 text-4xl text-blue-900">→</p>
+      <p className="absolute bottom-0 right-0 pr-10 pb-7 text-4xl text-red-900">→</p>
     </article>
   )
 }

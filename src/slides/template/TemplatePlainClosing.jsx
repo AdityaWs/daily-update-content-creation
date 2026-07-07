@@ -15,7 +15,7 @@ export default function TemplatePlainClosing({ image, judul, materi, img_object_
   return (
     <article className="relative h-[720px] w-[540px] bg-white">
       {image_to_display}
-      <div className="absolute h-full w-full top-0 left-0 p-16 bg-blue-900/85">
+      <div className="absolute h-full w-full top-0 left-0 p-16 bg-red-900/85">
         <h1 className="text-2xl mb-4 text-white font-bold drop-shadow">{judul}</h1>
         <div className="text-justify text-white text-sm drop-shadow">{materi}</div>
       </div>

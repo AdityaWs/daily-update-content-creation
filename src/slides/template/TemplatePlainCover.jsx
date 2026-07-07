@@ -15,9 +15,9 @@ export default function TemplatePlainCover({ image, judul, materi, img_object_fi
   return (
     <article className="relative h-[720px] w-[540px] bg-white">
       {image_to_display}
-      <div className="absolute bottom-0 left-0 p-8 pb-16 bg-blue-900/90">
+      <div className="absolute bottom-0 left-0 p-8 pb-16 bg-red-900/90">
         <h1 className="text-4xl mb-4 text-white font-bold drop-shadow">{judul}</h1>
-        <p className="absolute top-0 left-0 -translate-y-full text-justify text-white font-bold bg-blue-900 px-4 py-2">{materi}</p>
+        <p className="absolute top-0 left-0 -translate-y-full text-justify text-white font-bold bg-red-900 px-4 py-2">{materi}</p>
       </div>
       <small className="absolute top-0 right-0 p-8 text-white">Foto: Wikimedia</small>
     </article>

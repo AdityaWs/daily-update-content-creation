@@ -1,8 +1,8 @@
 import SlideArrow from "../component/SlideArrow";
 import SlideNumber from "../component/SlideNumber";
-import logo from "./../../assets/Brand Title (512) invert.png";
+import logo from "./../../assets/DailyUpdate.png";
 
-export default function LunaContentPadded({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top', index = 1 }) {
+export default function DailyUpdateContentPadded({ image, judul, materi, img_object_fit = 'cover', img_object_position = 'top', index = 1 }) {
 
   let image_to_display = null;
   if (image) {
@@ -19,9 +19,9 @@ export default function LunaContentPadded({ image, judul, materi, img_object_fit
   return (
     <article className="relative h-[720px] w-[540px] bg-white">
       {image_to_display}
-      <img src={logo} className="absolute top-0 left-0 h-[10%] pl-3" />
+      <img src={logo} className="absolute top-0 left-0 h-[10%] ml-4 mt-4" />
       <div className="absolute top-[45%] p-8">
-        <h1 className="text-3xl pb-4 text-blue-900 font-bold bg-white inline-block pt-4 pr-4 max-w-[70%]">{judul}</h1>
+        <h1 className="text-3xl pb-4 text-red-900 font-bold bg-white inline-block pt-4 pr-4 max-w-[70%]">{judul}</h1>
         <p className="text-justify text-sm bg-white">{materi}</p>
       </div>
       <small className="absolute bottom-0 left-0 p-8">Foto: Wikimedia</small>
@@ -30,3 +30,4 @@ export default function LunaContentPadded({ image, judul, materi, img_object_fit
     </article>
   )
 }
+

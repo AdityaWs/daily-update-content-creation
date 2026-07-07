@@ -141,7 +141,7 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
         </button>
       </div>
       <button
-        className="absolute top-0 left-0 -translate-y-[150%] cursor-pointer text-sm px-2 py-1 bg-white border-1 border-gray-200 rounded-sm transition duration-100 hover:border-blue-500 hover:text-blue-900 hover:bg-blue-100"
+        className="absolute top-0 left-0 -translate-y-[150%] cursor-pointer text-sm px-2 py-1 bg-white border-1 border-gray-200 rounded-sm transition duration-100 hover:border-red-500 hover:text-red-900 hover:bg-red-100"
         onClick={() => downloadSingleSlide(index)}>Download Slide <i className="bi bi-download"></i></button>
       <div id={`slide-${index}`}>
         <Template
@@ -187,7 +187,7 @@ export default function Slide({ kata_kunci_gambar, judul, materi, index = 1, tem
               onClick={() => setSelectedTemplate(templateKey)}
               className={`cursor p-2 mr-2 mb-2 rounded text-xs font-medium transition-all inline-block truncate ${
                 isActive
-                  ? 'bg-blue-500 text-white hover:bg-blue-800'
+                  ? 'bg-red-500 text-white hover:bg-red-800'
                   : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
               }`}>
               {templateKey.replace(/_/g, ' ')}

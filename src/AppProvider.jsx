@@ -4,22 +4,22 @@ import TemplatePlainPadded from "./slides/template/TemplatePlainPadded";
 import TemplatePlainPhoto from "./slides/template/TemplatePlainPhoto";
 import TemplatePlainClosing from "./slides/template/TemplatePlainClosing";
 import TemplatePlainCover from "./slides/template/TemplatePlainCover";
-import LunaCoverFloatingSide from "./slides/template/LunaCoverFloatingSide";
-import LunaCoverHeadlineFoot from "./slides/template/LunaCoverHeadlineFoot";
-import LunaCoverFloating from "./slides/template/LunaCoverFloating";
-import LunaCoverHeadline from "./slides/template/LunaCoverHeadline";
-import LunaClosingHead from "./slides/template/LunaClosingHead";
-import LunaClosingFoot from "./slides/template/LunaClosingFoot";
-import LunaContentBasic from "./slides/template/LunaContentBasic";
-import LunaContentIndent from "./slides/template/LunaContentIndent";
-import LunaContentAside from "./slides/template/LunaContentAside";
-import LunaContentPadded from "./slides/template/LunaContentPadded";
-import LunaContentPortrait from "./slides/template/LunaContentPortrait";
-import LunaContentDouble from "./slides/template/LunaContentDouble";
-import LunaContentPhoto from "./slides/template/LunaContentPhoto";
-import LunaReflectionPhoto from "./slides/template/LunaReflectionPhoto";
-import LunaReflectionPadded from "./slides/template/LunaReflectionPadded";
-import LunaReflectionIndent from "./slides/template/LunaReflectionIndent";
+import DailyUpdateCoverFloatingSide from "./slides/template/DailyUpdateCoverFloatingSide";
+import DailyUpdateCoverHeadlineFoot from "./slides/template/DailyUpdateCoverHeadlineFoot";
+import DailyUpdateCoverFloating from "./slides/template/DailyUpdateCoverFloating";
+import DailyUpdateCoverHeadline from "./slides/template/DailyUpdateCoverHeadline";
+import DailyUpdateClosingHead from "./slides/template/DailyUpdateClosingHead";
+import DailyUpdateClosingFoot from "./slides/template/DailyUpdateClosingFoot";
+import DailyUpdateContentBasic from "./slides/template/DailyUpdateContentBasic";
+import DailyUpdateContentIndent from "./slides/template/DailyUpdateContentIndent";
+import DailyUpdateContentAside from "./slides/template/DailyUpdateContentAside";
+import DailyUpdateContentPadded from "./slides/template/DailyUpdateContentPadded";
+import DailyUpdateContentPortrait from "./slides/template/DailyUpdateContentPortrait";
+import DailyUpdateContentDouble from "./slides/template/DailyUpdateContentDouble";
+import DailyUpdateContentPhoto from "./slides/template/DailyUpdateContentPhoto";
+import DailyUpdateReflectionPhoto from "./slides/template/DailyUpdateReflectionPhoto";
+import DailyUpdateReflectionPadded from "./slides/template/DailyUpdateReflectionPadded";
+import DailyUpdateReflectionIndent from "./slides/template/DailyUpdateReflectionIndent";
 
 const AppContext = createContext();
 
@@ -28,22 +28,22 @@ export default function AppProvider({ children }) {
   const [g_content, setGContent] = useState({});
 
   const g_templates = {
-    cover_floating      : LunaCoverFloating,
-    cover_floating_side : LunaCoverFloatingSide,
-    cover_headline      : LunaCoverHeadline,
-    cover_headline_foot : LunaCoverHeadlineFoot,
-    closing_head     : LunaClosingHead,
-    closing_foot     : LunaClosingFoot,
-    content_basic    : LunaContentBasic,
-    content_indent   : LunaContentIndent,
-    content_aside    : LunaContentAside,
-    content_padded   : LunaContentPadded,
-    content_portrait : LunaContentPortrait,
-    content_double   : LunaContentDouble,
-    content_photo    : LunaContentPhoto,
-    reflection_photo : LunaReflectionPhoto,
-    reflection_padded: LunaReflectionPadded,
-    reflection_indent: LunaReflectionIndent,
+    cover_floating      : DailyUpdateCoverFloating,
+    cover_floating_side : DailyUpdateCoverFloatingSide,
+    cover_headline      : DailyUpdateCoverHeadline,
+    cover_headline_foot : DailyUpdateCoverHeadlineFoot,
+    closing_head     : DailyUpdateClosingHead,
+    closing_foot     : DailyUpdateClosingFoot,
+    content_basic    : DailyUpdateContentBasic,
+    content_indent   : DailyUpdateContentIndent,
+    content_aside    : DailyUpdateContentAside,
+    content_padded   : DailyUpdateContentPadded,
+    content_portrait : DailyUpdateContentPortrait,
+    content_double   : DailyUpdateContentDouble,
+    content_photo    : DailyUpdateContentPhoto,
+    reflection_photo : DailyUpdateReflectionPhoto,
+    reflection_padded: DailyUpdateReflectionPadded,
+    reflection_indent: DailyUpdateReflectionIndent,
     default        : TemplatePlain,
     default_padded : TemplatePlainPadded,
     default_photo  : TemplatePlainPhoto,

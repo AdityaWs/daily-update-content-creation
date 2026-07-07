@@ -93,7 +93,7 @@ export default function ImportContent() {
         )}
         <div className="pt-2 border-t border-gray-100 shrink-0">
           <button
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-sm transition duration-200 active:scale-[0.98] text-sm"
+            className="w-full bg-red-600 hover:bg-red-700 text-white font-medium py-2.5 px-4 rounded-sm transition duration-200 active:scale-[0.98] text-sm"
             onClick={handleImport}>Import Data JSON</button>
         </div>
       </aside>

@@ -1,11 +1,11 @@
 {
-  "name": "luna-content-creation",
+  "name": "DailyUpdate-content-creation",
   "private": true,
   "version": "0.0.0",
   "main": "cli.js",
   "type": "module",
   "bin": {
-    "luna_content_creation": "./cli.js"
+    "DailyUpdate_content_creation": "./cli.js"
   },
   "scripts": {
     "dev": "vite",
@@ -36,3 +36,4 @@
     "vite": "^8.1.1"
   }
 }
+

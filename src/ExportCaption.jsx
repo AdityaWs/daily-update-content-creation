@@ -3,7 +3,7 @@ import { useGlobalState } from "./AppProvider";
 
 export default function ExportCaption() {
   const { g_content } = useGlobalState();
-  const [caption, setCaption] = useState('Salutations! Luna Historien.\n\n');
+  const [caption, setCaption] = useState('Salutations! DailyUpdate Historien.\n\n');
   const [isHidden, setIsHidden] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function ExportCaption() {
           return tag.startsWith("#") ? tag : `#${tag}`;
         })
         .join(" ");
-      setCaption('Salutations! Luna Historien.\n\n' + g_content.caption + '\n\n' + hashtagString);
+      setCaption('Halo Sobat Berita Harian!.\n\n' + g_content.caption + '\n\n' + hashtagString);
     }
   }, [g_content]);
 
