@@ -2,7 +2,11 @@
   "name": "luna-content-creation",
   "private": true,
   "version": "0.0.0",
+  "main": "cli.js",
   "type": "module",
+  "bin": {
+    "luna_content_creation": "./cli.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
