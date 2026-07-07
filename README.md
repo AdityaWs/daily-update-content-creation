@@ -2,16 +2,11 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)
 ![Tech](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Theme](https://img.shields.io/badge/Bleu_de_France-0055A4?style=for-the-badge)
+![Theme](https://img.shields.io/badge/Update_Harian-55000A?style=for-the-badge)
 
-Selamat datang di **DailyUpdate Content Creation** — sebuah tool eksklusif untuk merangkai narasi sejarah yang elegan dan mendalam. Dikembangkan khusus untuk **DailyUpdate Historie**, platform yang mengusung estetika biru klasik Prancis dalam setiap lembar kisahnya.
+Selamat datang di **DailyUpdate Content Creation** — sebuah tool eksklusif untuk merangkai artikel berita harian yang moderen. Dikembangkan khusus untuk **DailyUpdate Historie**, platform yang mengusung estetika merah dalam setiap lembar beritanya.
 
 ![Screenshot](./screenshot.png)
-
----
-
-## 🎨 Visi Visual
-Aplikasi ini dirancang untuk menyatukan presisi data dengan keindahan visual. Terinspirasi dari aristokrasi Prancis abad ke-18 dan keanggunan warna biru *bleu de France*, setiap slide yang Anda buat adalah sebuah artefak digital yang siap memikat audiens.
 
 ![Sample Slide](./slides.png)
 
@@ -23,7 +18,6 @@ Aplikasi ini dirancang untuk menyatukan presisi data dengan keindahan visual. Te
 - 🏛️ **Template Library (Versailles Collection):** Koleksi tata letak slide yang dirancang khusus untuk narasi sejarah.
 - 🖋️ **Export Caption:** Konversi narasi slide menjadi caption media sosial yang memikat.
 
----
 
 ## 🚀 Panduan Penggunaan
 
@@ -52,7 +46,6 @@ Buka panel **"Import Content JSON"** di sisi kiri. Input naskah sejarah Anda den
 ### 2. Menambahkan Slide Baru
 Untuk memperluas narasi, tambahkan objek slide baru ke dalam array `slides` di JSON Anda. Pastikan setiap slide memiliki `judul`, `materi`, dan `template_to_use` yang sesuai.
 
----
 
 ## 🛠️ Perluasan Template (Custom Atelier)
 
@@ -69,8 +62,3 @@ Untuk menambahkan desain template slide baru ke dalam *Atelier* DailyUpdate Hist
     };
     ```
 4.  **Implementation:** Pilih dan klik `"royal_cover"` untuk menggunakan template.
-
----
-
-> *L'histoire est une lumière qui éclaire le passé. DailyUpdate Historie — Membawa sejarah kembali hidup.* ⚜️
-
